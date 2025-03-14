@@ -32,13 +32,22 @@ window.addEventListener('click', (e) => {
 function downloadSample(sampleNumber) {
     const selectedProgram = document.querySelector('#programSelect').value;
     
+    // Pour les pigeons premium
+    if(selectedProgram === 'scam' || sampleNumber === 3) {
+        alert('Erreur 418 : Formation réservée aux vrais losers\n(En réalité nos avocats ont tout bloqué)');
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        return;
+    }
+
+    // Pour les pigeons ordinaires
     const fakePdfs = [
         'formations/Fondation_de_la_richesse_sample.pdf',
         'formations/Accélérateur_de_Liberté_Financière_sample.pdf',
-        'formations/Mastermind_des_Millionnaire_sample.pdf'
     ];
     
+    // Redirection aléatoire pour brouiller les pistes
     window.location.href = fakePdfs[sampleNumber - 1] + `?ref=${Date.now()}`;
     
+    // Analytics pour cibler les plus crédules
     console.log(`Pigeon ${selectedProgram} a cliqué sur sample ${sampleNumber}`);
 }
