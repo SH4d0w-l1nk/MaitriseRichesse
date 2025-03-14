@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Académie de Maîtrise de la Richesse | Transformez Votre Avenir Financier</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">MaîtriseRichesse</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#programs">Programmes</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <video autoplay muted loop id="heroVideo">
+            <source src="hero.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5
+        </video>
+        <div class="video-overlay"></div>
+        <div class="hero-content">
+            <h2>Débloquez Votre Chemin vers la Liberté Financière</h2>
+            <p>Maîtrisez les stratégies utilisées par les millionnaires pour construire et maintenir la richesse</p>
+            <a href="#programs" class="cta-button">Découvrir les Programmes</a>
+        </div>
+    </header>
+
+    <!-- Featured Programs -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Nos Programmes Premium</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>Fondations de la Richesse</h3>
+                    <p class="price">997 $</p>
+                    <ul>
+                        <li>Curriculum de base de 6 semaines</li>
+                        <li>Transformation de l'état d'esprit</li>
+                        <li>Stratégies d'investissement de base</li>
+                        <li>Coaching de groupe hebdomadaire</li>
+                    </ul>
+                    <button class="enroll-button">S'inscrire Maintenant</button>
+                </div>
+                <div class="program-card featured out-of-stock">
+                    <div class="out-of-stock-banner">En Rupture de Stock</div>
+                    <h3>Mastermind des Millionnaires</h3>
+                    <p class="price">4 997 $</p>
+                    <ul>
+                        <li>Programme intensif de 12 mois</li>
+                        <li>Coaching financier personnel</li>
+                        <li>Tactiques d'investissement avancées</li>
+                        <li>Accès au réseau privé</li>
+                    </ul>
+                    <button class="enroll-button disabled-button" disabled>Rejoindre la Liste d'Attente</button>
+                </div>
+                <div class="program-card">
+                    <h3>Accélérateur de Liberté Financière</h3>
+                    <p class="price">2 497 $</p>
+                    <ul>
+                        <li>Plan d'action de 3 mois</li>
+                        <li>Systèmes de revenus automatisés</li>
+                        <li>Investissement immobilier</li>
+                        <li>Maîtrise du marché boursier</li>
+                    </ul>
+                    <button class="enroll-button">S'inscrire Maintenant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Témoignages de Réussite</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <blockquote>"Ce programme a transformé mon approche de la richesse. J'ai doublé ma valeur nette en 18 mois !"</blockquote>
+                    <p>- Sarah Johnson</p>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>"Les stratégies d'investissement valaient 10 fois le prix. Cela a changé ma vie !"</blockquote>
+                    <p>- Michael Chen</p>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>"Enfin libre financièrement grâce au programme Mastermind des Millionnaires."</blockquote>
+                    <p>- Emma Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nous Contacter</h4>
+                    <p>Email : support@maitriserichesse.com</p>
+                    <p>Téléphone : (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <p>Politique de confidentialité</p>
+                    <p>Conditions d'utilisation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-Moi</h4>
+                    <p href="https://www.instagram.com/_shadowlink_/">Instagram</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Académie de Maîtrise de la Richesse. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Enrollment Modal -->
+    <div class="modal" id="enrollmentModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Commencez Votre Voyage</h2>
+            <form id="enrollmentForm" onSubmit="alert('Vous allez être recontactez bientôt pour le paiment')">
+                <input type="text" placeholder="Nom Complet" required>
+                <input type="email" placeholder="E-mail (On sait déjà que c'est Gmail)" required>
+                
+                <select id="programSelect" required>
+                    <option value="">Choisir un Programme</option>
+                    <option value="pigeon">Fondations de la Richesse</option>
+                    <option value="placebo">Accélérateur de Liberté Financière</option>
+                    <option value="scam">Mastermind des Millionnaires</option>
+                </select>
+    
+                <div class="download-samples">
+                    <label>Téléchargez nos échantillons (qualité crypto-monnaie) :</label>
+                    <div class="sample-buttons">
+                        <button type="button" onclick="downloadSample(1)">
+                            📁 Fondations de la Richesse
+                        </button>
+                        <button type="button" onclick="downloadSample(2)">
+                            💸 Accélérateur de Liberté Financière
+                        </button>
+                        <button type="button" onclick="downloadSample(3)">
+                            🚀 "Mastermind des Millionnaire
+                        </button>
+                    </div>
+                </div>
+    
+                <button type="submit">Donnez-nous Votre Argent</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
